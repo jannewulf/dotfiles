@@ -1,0 +1,11 @@
+# add colors
+alias ls='ls --color=auto'
+alias ll='ls -lhA'
+alias la='ls -A'
+alias l='ls -CF'
+alias grep='grep --color=auto'
+alias fgrep='fgrep --color=auto'
+alias egrep='egrep --color=auto'
+
+# type fuck if you forgot sudo
+alias fuck='sudo $(history -p !!)'

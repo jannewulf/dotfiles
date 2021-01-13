@@ -9,3 +9,7 @@ alias egrep='egrep --color=auto'
 
 # type fuck if you forgot sudo
 alias fuck='sudo $(history -p !!)'
+
+if [ -f ~/.bash_aliases.local ]; then
+    . ~/.bash_aliases.local
+fi

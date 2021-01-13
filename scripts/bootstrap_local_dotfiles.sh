@@ -11,7 +11,6 @@ mkdir configs
 
 touch configs/profile.local
 
-touch configs/bash_profile.local
 touch configs/bashrc.local
 touch configs/bash_aliases.local
 

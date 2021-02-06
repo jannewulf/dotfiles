@@ -1,14 +1,32 @@
-# add colors
 alias ls='ls --color=auto'
 alias ll='ls -lhA'
 alias la='ls -A'
 alias l='ls -CF'
+
+alias ..='cd ..'
+alias ...='cd ../..'
+alias ....='cd ../../..'
+alias -- -="cd -"                  # Go to previous dir with -
+alias cd.='cd $(readlink -f .)'    # Go to real dir (i.e. if current dir is linked)
+
 alias grep='grep --color=auto'
 alias fgrep='fgrep --color=auto'
 alias egrep='egrep --color=auto'
 
+alias g='git'
+alias gs='git status -sb --show-stash'
+
 # type fuck if you forgot sudo
 alias fuck='sudo $(history -p !!)'
+
+# Print each PATH entry on a separate line
+alias path='echo -e ${PATH//:/\\n}'
+
+# Reload the shell (i.e. invoke as a login shell)
+alias reload="exec ${SHELL} -l"
+
+alias week="date +%V" # print week number
+alias speedtest="wget -O /dev/null http://speed.transip.nl/100mb.bin"
 
 if [ -f ~/.bash_aliases.local ]; then
     . ~/.bash_aliases.local

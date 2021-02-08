@@ -4,6 +4,8 @@
 
 [[ -f configs/profile.local ]] && ln --symbolic --relative --interactive --verbose configs/profile.local "$HOME"/.profile.local
 
+[[ -f configs/inputrc.local ]] && ln --symbolic --relative --interactive --verbose configs/inputrc.local "$HOME"/.inputrc.local
+
 [[ -f configs/bashrc.local ]] && ln --symbolic --relative --interactive --verbose configs/bashrc.local "$HOME"/.bashrc.local
 [[ -f configs/bash_aliases.local ]] && ln --symbolic --relative --interactive --verbose configs/bash_aliases.local "$HOME"/.bash_aliases.local
 
@@ -12,3 +14,4 @@
 [[ -f configs/tmux.conf.local ]] && ln --symbolic --relative --interactive --verbose configs/tmux.conf.local "$HOME"/.tmux.conf.local
 
 [[ -f configs/vimrc.local ]] && ln --symbolic --relative --interactive --verbose configs/vimrc.local "$HOME"/.vimrc.local
+

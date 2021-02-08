@@ -11,6 +11,8 @@ mkdir configs
 
 touch configs/profile.local
 
+touch configs/inputrc.local
+
 touch configs/bashrc.local
 touch configs/bash_aliases.local
 
@@ -19,3 +21,4 @@ touch configs/gitconfig.local
 touch configs/tmux.conf.local
 
 touch configs/vimrc.local
+

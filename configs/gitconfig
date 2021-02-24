@@ -1,3 +1,6 @@
+[core]
+	editor = vim
+
 [user]
 
     # Do not guess the user's identity.

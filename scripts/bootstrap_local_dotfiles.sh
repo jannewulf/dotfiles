@@ -15,6 +15,7 @@ touch configs/inputrc.local
 
 touch configs/bashrc.local
 touch configs/bash_aliases.local
+touch configs/bash_fn.local
 
 touch configs/gitconfig.local
 

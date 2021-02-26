@@ -1,0 +1,17 @@
+mkcd () {
+  mkdir -p "$1" && cd "$1"
+}
+
+ftext () {
+  grep -iIHrn --color=always "$1" . | less -R -r
+}
+
+genqr ()
+{
+  wget -O - --quiet --post-data "-=$@" qrenco.de 
+}
+
+if [ -f ~/.bash_fn.local ]; then
+    . ~/.bash_fn.local
+fi
+

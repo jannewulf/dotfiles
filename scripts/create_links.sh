@@ -9,6 +9,7 @@ ln --symbolic --relative --interactive --verbose dotfiles.global/configs/inputrc
 ln --symbolic --relative --interactive --verbose dotfiles.global/configs/bash_profile "$HOME"/.bash_profile
 ln --symbolic --relative --interactive --verbose dotfiles.global/configs/bashrc "$HOME"/.bashrc
 ln --symbolic --relative --interactive --verbose dotfiles.global/configs/bash_aliases "$HOME"/.bash_aliases
+ln --symbolic --relative --interactive --verbose dotfiles.global/configs/bash_fn "$HOME"/.bash_fn
 
 ln --symbolic --relative --interactive --verbose dotfiles.global/configs/gitconfig "$HOME"/.gitconfig
 

@@ -8,6 +8,7 @@
 
 [[ -f configs/bashrc.local ]] && ln --symbolic --relative --interactive --verbose configs/bashrc.local "$HOME"/.bashrc.local
 [[ -f configs/bash_aliases.local ]] && ln --symbolic --relative --interactive --verbose configs/bash_aliases.local "$HOME"/.bash_aliases.local
+[[ -f configs/bash_fn.local ]] && ln --symbolic --relative --interactive --verbose configs/bash_fn.local "$HOME"/.bash_fn.local
 
 [[ -f configs/gitconfig.local ]] && ln --symbolic --relative --interactive --verbose configs/gitconfig.local "$HOME"/.gitconfig.local
 

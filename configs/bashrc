@@ -72,6 +72,10 @@ function __prompt_command() {
   local git_branch=$(git branch 2>/dev/null | awk '/^\*/ {print " ["$2"]"}')
   PS1+="${magenta_fg}${git_branch}${default_color}"
 
+  if [[ $VIRTUAL_ENV ]]; then
+    PS1+=" ${blue_fg}[$(basename $VIRTUAL_ENV)]${default_color}"
+  fi
+
   PS1+=" :: "
 
   PS1+="${cyan_fg}\W${default_color}"

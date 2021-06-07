@@ -17,3 +17,5 @@ ln --symbolic --relative --interactive --verbose dotfiles.global/configs/tmux.co
 
 ln --symbolic --relative --interactive --verbose dotfiles.global/configs/vimrc "$HOME"/.vimrc
 
+ln --symbolic --relative --interactive --verbose dotfiles.global/configs/gdbinit "$HOME"/.gdbinit
+

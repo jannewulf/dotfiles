@@ -6,9 +6,13 @@ ftext () {
   grep -iIHrn --color=always "$1" . | less -R -r
 }
 
-qr ()
-{
+qr () {
   wget -O - --quiet --post-data "-=$@" qrenco.de 
+}
+
+# pretty print csv, name is inspired by jq
+cq () {
+  column -t -s, -n "$@" | less -F -S -X -K
 }
 
 if [ -f ~/.bash_fn.local ]; then

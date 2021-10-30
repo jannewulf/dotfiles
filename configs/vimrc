@@ -19,6 +19,10 @@ set tabstop=2
 set shiftwidth=2
 set expandtab
 
+" Set timeouts, shorter timeout because timeout with <ESC> is annoying
+set timeoutlen=500
+set ttimeoutlen=50
+
 " Treat files as filetypes
 autocmd! BufRead,BufNewFile *.tpp setfiletype c
 

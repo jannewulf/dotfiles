@@ -11,6 +11,19 @@ qr ()
   wget -O - --quiet --post-data "-=$@" qrenco.de 
 }
 
+# Downloads a list of available comics from wizardzines.com
+wzines () {
+  curl -fsSL https://wizardzines.com/comics/ | \
+    grep -o -E href=\"/?comics/[A-Za-z-]+/?\" | \
+    sed -E 's@href="/comics/@@; s@/?"@@' | \
+    sort
+}
+
+# Downloads and displays comic from wizardzines.com
+wzine () {
+  curl -fsSL https://wizardzines.com/comics/"$1"/"$1".png | kitty +kitten icat
+}
+
 if [ -f ~/.bash_fn.local ]; then
     . ~/.bash_fn.local
 fi
